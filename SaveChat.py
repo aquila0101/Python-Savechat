@@ -8,7 +8,7 @@ url = "https://www.youtube.com/live_chat/get_live_chat?video_id=<video_id>"
 headers = {'Authorization': 'Bearer <access_token>'}
 
 response = requests.get(url, headers=headers)
-data = json.loads(response.text)
+data = json.loads(response.txt)
 
 # Abra o arquivo para escrita
 with open('chat.txt', 'w') as f:
